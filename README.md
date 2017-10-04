@@ -2,8 +2,11 @@ strings
 	
 	<str>.upper()
 	<str>.lower()
+	<str>.title()
+	<str>.strip()
 	<str>.count(<char>) - returns number of occurrences of character
 	string slicing <str>[start:end]
+	str() - type conversion to string type
 
 builtins
 
@@ -11,6 +14,7 @@ builtins
 	// - integer division
 	pow()
 	len()
+	print()
 
 math package
 
@@ -27,3 +31,6 @@ OOP
 loops
 
 	for item in items
+
+BUILD A PROJECT
+USE ANKI
