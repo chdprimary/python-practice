@@ -1,0 +1,1 @@
+print(sum([val for val in range(1,1000001)]))
