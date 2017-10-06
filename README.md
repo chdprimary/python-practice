@@ -67,5 +67,36 @@ tuples #tuples are lists whose elements are immutable
 
 	* tuples use () instead of []
 	* but you can redefine the whole tuple at once
+
+dictionaries
+
+	del <dict>['<key>'] 		# deletes a kv pair in a dict
+	for k,v in <dict>.items() 	# returns all dict's kv pairs
+	for k in <dict> 			# returns all dict's keys
+	for k in <dict>.keys()		# returns all dict's keys
+	for k in <dict>.values()	# returns all dict's values
+
+user input
+
+	input()
+
+functions
+
+	keyword 'def'
+	positional arguments func(val1,val2)
+	keyword arguments func(arg2=val1,arg1=val2)
+	default values z3 put the default value in the function signature
+	optional arguments should be set equal to a False value and placed last in the list of parameters
+	lists are passed by reference, but you can pass a copy with <list>[:]
+	pass an arbitrary numbers of arguments with *<param> # packs the arguments into a tuple
+	you can pass keyword or positional arguments to an arbitrary argument
+
+importing packages
+
+	import functions from a pizza.py file by using 'import pizza' and then writing pizza.<func>()
+	from pizza import func1 as alias1
+	import pizza as alias1
+	from pizza import *
+	
 BUILD A PROJECT
 USE ANKI
