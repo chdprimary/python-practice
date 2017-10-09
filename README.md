@@ -28,6 +28,8 @@ OOP
 			self.name = name
 			self.quantity = 5
 			pass
+	inheritance
+	super().__init__(...)
 
 conditionals
 
