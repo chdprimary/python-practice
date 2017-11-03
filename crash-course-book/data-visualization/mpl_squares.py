@@ -17,5 +17,5 @@ matplotlib.pyplot.xlabel("Value", fontsize=14)
 matplotlib.pyplot.ylabel("Square of Value", fontsize=14)
 matplotlib.pyplot.tick_params(axis="both", which="major", labelsize=14)
 
-#matplotlib.pyplot.show()
-matplotlib.pyplot.savefig("squares_plot.png", bbox_inches="tight")
+matplotlib.pyplot.show()
+# matplotlib.pyplot.savefig("squares_plot.png", bbox_inches="tight")
