@@ -8,6 +8,10 @@ contents = fileObj.read()
 fileObj.close()
 
 barchart = pygal.Bar()
+barchart.title = "Frequency of Letters in Text File"
+barchart.x_title = 'Letter'
+barchart.y_title = 'Frequency'
+
 alphaDict = defaultdict(int)
 
 for char in contents:
@@ -16,6 +20,5 @@ for char in contents:
 
 for k, v in sorted(alphaDict.items()):
     barchart.add(k, v)
-    # print(str(k) + ": " + str(v))
 
-barchart.render_to_file("plotting.svg")
+barchart.render_to_file("letter_frequency_multi_variable.svg")
