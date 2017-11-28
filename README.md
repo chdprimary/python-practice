@@ -49,6 +49,7 @@ lists
 	access last element with index -1
 	<list>.append(<item>)
 	<list>.insert(<idx>,<item>)
+	<list>.index(<item>)
 	del <list>[<idx>]
 	<list>.remove(<item>)
 	<list>.pop(<idx>)

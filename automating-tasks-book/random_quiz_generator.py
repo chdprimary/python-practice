@@ -17,13 +17,22 @@ for quizNum in range(35):
     states = list(capitals.keys())
     random.shuffle(states)
 
-    for state in states:
-        quizFile.write(state + "?\n")
+    for questionNum in range(50):
+        quizFile.write("%s.What is the capital of %s?\n" % (questionNum+1, states[questionNum]))
+
+        correctAnswer = capitals[states[questionNum]]
+        wrongAnswers = list(capitals.values())
+        wrongAnswers.remove(correctAnswer)
+        wrongAnswers = random.sample(wrongAnswers, 3)
+        answerOptions = wrongAnswers + [correctAnswer]
+        random.shuffle(answerOptions)
+
         for i in range(4):
-            quizFile.write("\t" + str(i) + "\n")
+            quizFile.write("\t%s. %s\n" % ("ABCD"[i], answerOptions[i]))
         quizFile.write("\n")
 
-    # Log answer for each of the 50 questions
+        answerFile.write("%s. %s\n" % (questionNum+1, "ABCD"[answerOptions.index(correctAnswer)]))
 
+    # Close everything
     quizFile.close()
     answerFile.close()

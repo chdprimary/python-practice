@@ -4,303 +4,303 @@ Period:
 
                     State Capitols Quiz (Form 19)
 
-Maryland?
-	0
-	1
-	2
-	3
+1.What is the capital of Tennessee?
+	A. Albany
+	B. Des Moines
+	C. Nashville
+	D. Boise
 
-Texas?
-	0
-	1
-	2
-	3
+2.What is the capital of Missouri?
+	A. Jefferson City
+	B. Frankfort
+	C. Salt Lake City
+	D. Phoenix
 
-Rhode Island?
-	0
-	1
-	2
-	3
+3.What is the capital of Idaho?
+	A. Helena
+	B. Boise
+	C. Honolulu
+	D. Atlanta
 
-Minnesota?
-	0
-	1
-	2
-	3
+4.What is the capital of Arizona?
+	A. Phoenix
+	B. Montgomery
+	C. Raleigh
+	D. Jackson
 
-Missouri?
-	0
-	1
-	2
-	3
+5.What is the capital of Colorado?
+	A. Montpelier
+	B. Sacramento
+	C. Hartford
+	D. Denver
 
-Ohio?
-	0
-	1
-	2
-	3
+6.What is the capital of Minnesota?
+	A. Nashville
+	B. Montgomery
+	C. Saint Paul
+	D. Jefferson City
 
-Connecticut?
-	0
-	1
-	2
-	3
+7.What is the capital of Maine?
+	A. Augusta
+	B. Montgomery
+	C. Oklahoma City
+	D. Raleigh
 
-Oregon?
-	0
-	1
-	2
-	3
+8.What is the capital of New York?
+	A. Albany
+	B. Pierre
+	C. Cheyenne
+	D. Boston
 
-Hawaii?
-	0
-	1
-	2
-	3
+9.What is the capital of North Dakota?
+	A. Montpelier
+	B. Dover
+	C. Bismarck
+	D. Baton Rouge
 
-South Carolina?
-	0
-	1
-	2
-	3
+10.What is the capital of Nevada?
+	A. Jefferson City
+	B. Indianapolis
+	C. Carson City
+	D. Des Moines
 
-Idaho?
-	0
-	1
-	2
-	3
+11.What is the capital of Washington?
+	A. Olympia
+	B. Providence
+	C. Salt Lake City
+	D. Phoenix
 
-New Mexico?
-	0
-	1
-	2
-	3
+12.What is the capital of Oregon?
+	A. Boise
+	B. Frankfort
+	C. Salem
+	D. Boston
 
-Pennsylvania?
-	0
-	1
-	2
-	3
+13.What is the capital of Kentucky?
+	A. Annapolis
+	B. Frankfort
+	C. Boise
+	D. Richmond
 
-New York?
-	0
-	1
-	2
-	3
+14.What is the capital of Nebraska?
+	A. Columbia
+	B. Lincoln
+	C. Honolulu
+	D. Boston
 
-Kansas?
-	0
-	1
-	2
-	3
+15.What is the capital of Louisiana?
+	A. Topeka
+	B. Baton Rouge
+	C. Lansing
+	D. Honolulu
 
-West Virginia?
-	0
-	1
-	2
-	3
+16.What is the capital of Pennsylvania?
+	A. Dover
+	B. Santa Fe
+	C. Harrisburg
+	D. Jackson
 
-Massachusetts?
-	0
-	1
-	2
-	3
+17.What is the capital of Georgia?
+	A. Oklahoma City
+	B. Jefferson City
+	C. Atlanta
+	D. Lincoln
 
-New Hampshire?
-	0
-	1
-	2
-	3
+18.What is the capital of Alaska?
+	A. Juneau
+	B. Tallahassee
+	C. Little Rock
+	D. Charleston
 
-Virginia?
-	0
-	1
-	2
-	3
+19.What is the capital of Mississippi?
+	A. Phoenix
+	B. Lincoln
+	C. Montgomery
+	D. Jackson
 
-Wyoming?
-	0
-	1
-	2
-	3
+20.What is the capital of Wisconsin?
+	A. Salt Lake City
+	B. Boise
+	C. Madison
+	D. Juneau
 
-Montana?
-	0
-	1
-	2
-	3
+21.What is the capital of California?
+	A. Providence
+	B. Sacramento
+	C. Helena
+	D. Indianapolis
 
-Illinois?
-	0
-	1
-	2
-	3
+22.What is the capital of Rhode Island?
+	A. Frankfort
+	B. Dover
+	C. Madison
+	D. Providence
 
-New Jersey?
-	0
-	1
-	2
-	3
+23.What is the capital of Michigan?
+	A. Salt Lake City
+	B. Concord
+	C. Lansing
+	D. Dover
 
-Florida?
-	0
-	1
-	2
-	3
+24.What is the capital of Alabama?
+	A. Montgomery
+	B. Trenton
+	C. Lansing
+	D. Annapolis
 
-Delaware?
-	0
-	1
-	2
-	3
+25.What is the capital of Maryland?
+	A. Phoenix
+	B. Jackson
+	C. Annapolis
+	D. Topeka
 
-Tennessee?
-	0
-	1
-	2
-	3
+26.What is the capital of North Carolina?
+	A. Oklahoma City
+	B. Denver
+	C. Dover
+	D. Raleigh
 
-Iowa?
-	0
-	1
-	2
-	3
+27.What is the capital of Wyoming?
+	A. Harrisburg
+	B. Providence
+	C. Phoenix
+	D. Cheyenne
 
-Maine?
-	0
-	1
-	2
-	3
+28.What is the capital of West Virginia?
+	A. Jefferson City
+	B. Charleston
+	C. Columbus
+	D. Topeka
 
-Nebraska?
-	0
-	1
-	2
-	3
+29.What is the capital of Delaware?
+	A. Dover
+	B. Cheyenne
+	C. Salt Lake City
+	D. Concord
 
-Colorado?
-	0
-	1
-	2
-	3
+30.What is the capital of Florida?
+	A. Harrisburg
+	B. Tallahassee
+	C. Olympia
+	D. Cheyenne
 
-South Dakota?
-	0
-	1
-	2
-	3
+31.What is the capital of Vermont?
+	A. Phoenix
+	B. Pierre
+	C. Montpelier
+	D. Jackson
 
-Georgia?
-	0
-	1
-	2
-	3
+32.What is the capital of Virginia?
+	A. Cheyenne
+	B. Dover
+	C. Richmond
+	D. Juneau
 
-Mississippi?
-	0
-	1
-	2
-	3
+33.What is the capital of Iowa?
+	A. Jackson
+	B. Concord
+	C. Dover
+	D. Des Moines
 
-Washington?
-	0
-	1
-	2
-	3
+34.What is the capital of Utah?
+	A. Sacramento
+	B. Salt Lake City
+	C. Columbia
+	D. Saint Paul
 
-North Carolina?
-	0
-	1
-	2
-	3
+35.What is the capital of Ohio?
+	A. Columbus
+	B. Helena
+	C. Nashville
+	D. Trenton
 
-Alaska?
-	0
-	1
-	2
-	3
+36.What is the capital of Montana?
+	A. Des Moines
+	B. Charleston
+	C. Helena
+	D. Tallahassee
 
-Alabama?
-	0
-	1
-	2
-	3
+37.What is the capital of South Dakota?
+	A. Trenton
+	B. Austin
+	C. Harrisburg
+	D. Pierre
 
-Kentucky?
-	0
-	1
-	2
-	3
+38.What is the capital of Massachusetts?
+	A. Boston
+	B. Madison
+	C. Atlanta
+	D. Frankfort
 
-Wisconsin?
-	0
-	1
-	2
-	3
+39.What is the capital of Oklahoma?
+	A. Phoenix
+	B. Oklahoma City
+	C. Montgomery
+	D. Boston
 
-North Dakota?
-	0
-	1
-	2
-	3
+40.What is the capital of Kansas?
+	A. Salem
+	B. Carson City
+	C. Olympia
+	D. Topeka
 
-Oklahoma?
-	0
-	1
-	2
-	3
+41.What is the capital of Connecticut?
+	A. Santa Fe
+	B. Hartford
+	C. Boston
+	D. Juneau
 
-Arkansas?
-	0
-	1
-	2
-	3
+42.What is the capital of Hawaii?
+	A. Dover
+	B. Honolulu
+	C. Montgomery
+	D. Bismarck
 
-California?
-	0
-	1
-	2
-	3
+43.What is the capital of New Hampshire?
+	A. Annapolis
+	B. Baton Rouge
+	C. Olympia
+	D. Concord
 
-Michigan?
-	0
-	1
-	2
-	3
+44.What is the capital of Illinois?
+	A. Springfield
+	B. Augusta
+	C. Bismarck
+	D. Montgomery
 
-Louisiana?
-	0
-	1
-	2
-	3
+45.What is the capital of Texas?
+	A. Austin
+	B. Annapolis
+	C. Concord
+	D. Oklahoma City
 
-Arizona?
-	0
-	1
-	2
-	3
+46.What is the capital of New Mexico?
+	A. Raleigh
+	B. Santa Fe
+	C. Olympia
+	D. Concord
 
-Indiana?
-	0
-	1
-	2
-	3
+47.What is the capital of New Jersey?
+	A. Austin
+	B. Trenton
+	C. Cheyenne
+	D. Tallahassee
 
-Vermont?
-	0
-	1
-	2
-	3
+48.What is the capital of Arkansas?
+	A. Cheyenne
+	B. Trenton
+	C. Little Rock
+	D. Lansing
 
-Nevada?
-	0
-	1
-	2
-	3
+49.What is the capital of Indiana?
+	A. Lincoln
+	B. Pierre
+	C. Indianapolis
+	D. Dover
 
-Utah?
-	0
-	1
-	2
-	3
+50.What is the capital of South Carolina?
+	A. Santa Fe
+	B. Pierre
+	C. Springfield
+	D. Columbia
 
