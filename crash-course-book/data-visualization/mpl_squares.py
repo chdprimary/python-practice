@@ -1,7 +1,7 @@
 import matplotlib.pyplot
 
 x1 = list(range(1,101))
-x1_squared = [val**2 for val in x1]
+x1_squared = [x**2 for x in x1]
 #matplotlib.pyplot.plot(x1, x1_squared, linewidth=3)
 
 matplotlib.pyplot.scatter(x1,

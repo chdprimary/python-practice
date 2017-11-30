@@ -7,6 +7,8 @@ strings
 	<str>.count(<char>) - returns number of occurrences of character
 	string slicing <str>[start:end]
 	str() - type conversion to string type
+	<str>.index(<char>) - will throw ValueError if <char> not found
+	<str>.find(<char>) - will return -1 if <char> not found
 
 builtins
 
@@ -17,7 +19,13 @@ builtins
 	print()
 	range(x,y,[skip_amount]) #includes x but not y
 
-math package
+'random' package
+
+	random.shuffle(<list>)
+	random.sample(<list>, <num_of_samples>)
+	random.choice(<list>) // chooses one item randomly
+
+'math' package
 
 	math.floor()
 

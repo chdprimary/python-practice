@@ -7,7 +7,7 @@ class RandomWalk():
         self.num_steps = num_steps
         self.x_coordinates = [0]
         self.y_coordinates = [0]
-    
+
     def get_step(self):
         direction = choice([-1,1])
         distance = choice([1,2,3,4,5])
@@ -15,8 +15,8 @@ class RandomWalk():
 
     def draw_walk(self):
         while len(self.x_coordinates) < self.num_steps:
-            new_x_coordinate = self.x_coordinates[-1] + get_step()
-            new_y_coordinate = self.y_coordinates[-1] + get_step()
+            new_x_coordinate = self.x_coordinates[-1] + self.get_step()
+            new_y_coordinate = self.y_coordinates[-1] + self.get_step()
 
             self.x_coordinates.append(new_x_coordinate)
             self.y_coordinates.append(new_y_coordinate)
