@@ -29,7 +29,7 @@ while True:
     # plt.axes().get_xaxis().set_visible(False)
     # plt.axes().get_yaxis().set_visible(False)
 
-    plt.scatter(
+    plt.plot(
         rw.x_coordinates, 
         rw.y_coordinates, 
         c=range(0, rw.num_steps), 

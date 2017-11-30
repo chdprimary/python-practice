@@ -18,7 +18,7 @@ for quizNum in range(35):
     random.shuffle(states)
 
     for questionNum in range(50):
-        quizFile.write("%s.What is the capital of %s?\n" % (questionNum+1, states[questionNum]))
+        quizFile.write("%s. What is the capital of %s?\n" % (questionNum+1, states[questionNum]))
 
         correctAnswer = capitals[states[questionNum]]
         wrongAnswers = list(capitals.values())

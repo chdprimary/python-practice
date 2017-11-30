@@ -9,6 +9,7 @@ strings
 	str() - type conversion to string type
 	<str>.index(<char>) - will throw ValueError if <char> not found
 	<str>.find(<char>) - will return -1 if <char> not found
+	<str>.join(<list>) - str can also be a char, or the empty string, of course, e.g. ''.join(listOfChars)
 
 builtins
 
@@ -50,6 +51,7 @@ conditionals
 loops
 
 	for item in items:
+	for idx, val in enumerate(<list>):
 
 lists
 
