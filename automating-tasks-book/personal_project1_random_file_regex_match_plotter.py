@@ -14,10 +14,11 @@
 #   Ok go.
 
 import os
-import random
 import shutil
+import random
 import re
 import pygal
+import logging
 
 NUM_RANDOM_TEXT_FILES = 100
 SPACE_CHAR_FREQUENCY = 10
@@ -53,10 +54,13 @@ def runProgram(iteration, numIterations, userRegex):
     os.chdir('..')
     shutil.rmtree('practice-project1', ignore_errors=True)
 
-    print('(%s/%s): %s TRM over %s 1KB files' % (str(iteration+1), str(numIterations), str(totalMatches), str(NUM_RANDOM_TEXT_FILES)))
+    logging.debug('(%s/%s): %s TRM over %s 1KB files' % (str(iteration+1), str(numIterations), str(totalMatches), str(NUM_RANDOM_TEXT_FILES)))
     return totalMatches
 
 def main():
+    logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+    logging.debug('Starting...')
+
     numIterations = input('How many times would you like to run the program? ')
     userRegex = input('What regular expression would you like to search for? ')
 
@@ -75,5 +79,7 @@ def main():
     barchart.add('TRE (Total Regex Matches)', domain)
     barchart.x_labels = range(0, len(domain))
     barchart.render_to_file('plot.svg')
+
+    logging.debug('Done.')
 
 main()

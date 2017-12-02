@@ -25,6 +25,7 @@ builtins
 	random.shuffle(<list>)
 	random.sample(<list>, <num_of_samples>)
 	random.choice(<list>) // chooses one item randomly
+	random.randint(<min>,<max_inclusive>)
 
 'math' package
 
