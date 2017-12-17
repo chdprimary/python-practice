@@ -2,6 +2,8 @@
 # If the word's length is odd, return the middle character. 
 # If the word's length is even, return the middle 2 characters.
 
+import sys, logging
+
 def get_middle(word):
     wordLen = len(word)
     middle = ''
@@ -12,3 +14,7 @@ def get_middle(word):
         middle = word[wordLen//2]
     
     return middle
+
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+word = sys.argv[1]
+print(get_middle(word))
