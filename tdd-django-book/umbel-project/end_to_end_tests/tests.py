@@ -1,7 +1,7 @@
 from selenium import webdriver
-import unittest
+from django.test import LiveServerTestCase
 
-class NewVisitorTest(unittest.TestCase):
+class NewVisitorTest(LiveServerTestCase):
     def setUp(self):
         self.browser = webdriver.Firefox()
 
@@ -10,7 +10,7 @@ class NewVisitorTest(unittest.TestCase):
 
     def test_can_open_home_page(self):
         # Alice navigates to 'localhost:8000' and a page loads
-        self.browser.get('http://localhost:8000')
+        self.browser.get(self.live_server_url)
 
         # Alice notices that the browser title reads 'Bitcoin Chart'
         # Alice notices that the page header reads 'Bitcoin Price'
@@ -23,6 +23,13 @@ class NewVisitorTest(unittest.TestCase):
         table = self.browser.find_element_by_id('btc_data_table')
         cells = table.find_elements_by_tag_name('td')
         self.assertIn('Price', [cell.text for cell in cells])
+
+        # Above the table is a header reading 'BTC Historical Data'
+        header_text = self.browser.find_element_by_id('historical_table_header')
+        self.assertIn('BTC Historical Data', header_text)
+
+        # Alice sees a header reading 'Place Order'
+        # Alice sees a form, below the header, for placing buy/sell market orders
         self.fail('Write new functional test!')
 
         # Alice refreshes the page and notices that the table updates
