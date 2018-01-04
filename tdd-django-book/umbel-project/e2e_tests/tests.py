@@ -28,8 +28,8 @@ class NewVisitorTest(LiveServerTestCase):
         # Alice sees a table showing the historical BTC price data
         # Each row contains a datetime, price(USD), open, high, low, and percent change column
         hist_table = self.browser.find_element_by_id('historical_data_table')
-        cells = hist_table.find_elements_by_tag_name('td')
-        self.assertIn('Price', [cell.text for cell in cells])
+        rows = hist_table.find_elements_by_tag_name('tr')
+        self.assertIn('Price', rows[0].text)
 
         # Alice sees a header reading 'Place Order'
         header_text = self.browser.find_element_by_id('btc_order_header').text
