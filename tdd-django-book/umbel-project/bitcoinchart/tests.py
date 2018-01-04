@@ -1,4 +1,5 @@
 from django.test import TestCase
+from bitcoinchart.models import Order
 
 import os
 import csv
@@ -19,3 +20,9 @@ class HomePageTest(TestCase):
             for row in contents:
                 for cell in row:
                     self.assertIn(cell, response.content.decode())
+
+    def test_can_save_a_POST_request(self):
+        self.client.post('/', data={'order_amount': 100.00})
+        self.assertEqual(Order.objects.count(), 1)
+        new_order = Order.objects.first()
+        self.assertEqual(new_order.amount, 100.00)

@@ -19,12 +19,15 @@
             <option value='buy'>Buy</option>
             <option value='sell'>Sell</option>
         </select>
-        <form>
-            <input id='order_amount_field' placeholder=' Amount' />
+        <form method='POST'>
+            <input name='order_amount' id='order_amount_field' placeholder=' Amount' />
             <button>Submit!</button>
+            {% csrf_token %}
         </form>
         <table id='order_table'>
-
+            {% for order in orders %}
+                <tr><td>{{order.amount}}</td></tr>
+            {% endfor %}
         </table>
     </body>
 </html>

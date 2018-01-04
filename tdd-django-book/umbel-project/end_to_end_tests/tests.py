@@ -42,12 +42,12 @@ class NewVisitorTest(LiveServerTestCase):
 
         # Alice submits an order and notices that the order item appears in a table below
         inputbox = self.browser.find_element_by_id('order_amount_field')
-        inputbox.send_keys('100')
+        inputbox.send_keys('100.00')
         inputbox.send_keys(Keys.ENTER)
         time.sleep(1)
         order_table = self.browser.find_element_by_id('order_table')
         rows = order_table.find_elements_by_tag_name('tr')
-        self.assertIn('100', [row.text for row in rows])
+        self.assertIn('100.00', [row.text for row in rows])
 
         # Alice refreshes the page and notices that the historical data table updates
         self.fail('Write new functional test!')
