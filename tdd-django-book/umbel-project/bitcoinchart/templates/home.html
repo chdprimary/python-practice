@@ -15,18 +15,19 @@
             {% endfor %}
         </table>
         <h2 id='btc_order_header'>Place Order</h2>
-        <select id='order_type_selector'>
-            <option value='buy'>Buy</option>
-            <option value='sell'>Sell</option>
-        </select>
         <form method='POST'>
+            <select name='order_type' id='order_type_selector'>
+                <option value='buy'>Buy</option>
+                <option value='sell'>Sell</option>
+            </select>
             <input name='order_amount' id='order_amount_field' placeholder=' Amount' />
             <button>Submit!</button>
             {% csrf_token %}
         </form>
         <table id='order_table'>
+            <tr><td>Type</td><td>Amount (USD)</td></tr>
             {% for order in orders %}
-                <tr><td>{{order.amount}}</td></tr>
+                <tr><td>{{order.order_type}}</td><td>${{order.order_amount}}</td></tr>
             {% endfor %}
         </table>
     </body>

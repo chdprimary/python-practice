@@ -47,7 +47,8 @@ class NewVisitorTest(LiveServerTestCase):
         time.sleep(1)
         order_table = self.browser.find_element_by_id('order_table')
         rows = order_table.find_elements_by_tag_name('tr')
-        self.assertIn('100.00', [row.text for row in rows])
+        self.assertEqual(len(rows), 2)
+        self.assertIn('100.00', rows[1].text)
 
         # Alice refreshes the page and notices that the historical data table updates
         self.fail('Write new functional test!')

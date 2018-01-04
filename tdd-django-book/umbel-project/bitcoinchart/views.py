@@ -6,7 +6,10 @@ import csv
 
 def home_page(request):
     if request.method == 'POST':
-        Order.objects.create(amount=request.POST['order_amount'])
+        Order.objects.create(
+            order_type=request.POST['order_type'],
+            order_amount=request.POST['order_amount'],
+        )
         return redirect('/')
 
     FILE_PATH = os.path.join('bitcoinchart', 'datasets')
