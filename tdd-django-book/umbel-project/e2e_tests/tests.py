@@ -11,7 +11,7 @@ class NewVisitorTest(LiveServerTestCase):
     def tearDown(self):
         self.browser.quit()
 
-    def test_can_open_home_page_and_submit_an_order(self):
+    def test_can_view_home_page_and_submit_an_order(self):
         # Alice goes to our app's homepage URI and a page loads
         self.browser.get(self.live_server_url)
 
@@ -53,6 +53,3 @@ class NewVisitorTest(LiveServerTestCase):
         self.fail('Write new functional test!')
 
         # Alice sees a chart, above the table, plotting USD price per BTC with respect to time
-
-if __name__ == '__main__':
-    unittest.main()
