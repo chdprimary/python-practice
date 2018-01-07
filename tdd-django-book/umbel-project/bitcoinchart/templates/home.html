@@ -24,10 +24,15 @@
             <button>Submit!</button>
             {% csrf_token %}
         </form>
+        <h2>Your Orders</h2>
         <table id='order_table'>
             <tr><td>Type</td><td>Amount (USD)</td></tr>
             {% for order in orders %}
-                <tr><td>{{order.order_type}}</td><td>${{order.order_amount}}</td></tr>
+                <tr>
+                    <td>{{order.order_type}}</td>
+                    <td>${{order.order_amount}}</td>
+                    <td>{{order.order_datetime}}</td>
+                </tr>
             {% endfor %}
         </table>
     </body>
