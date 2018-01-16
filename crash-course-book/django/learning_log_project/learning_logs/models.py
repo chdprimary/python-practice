@@ -1,7 +1,9 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Topic(models.Model):
     """A topic a user is learning about"""
+    owner = models.ForeignKey(User)
     text = models.CharField(max_length=200)
     date_added = models.DateTimeField(auto_now_add=True)
     def __str__(self):
