@@ -101,7 +101,7 @@ functions
 	keyword arguments func(arg2=val1,arg1=val2)
 	default values z3 put the default value in the function signature
 	optional arguments should be set equal to a False value and placed last in the list of parameters
-	lists are passed by reference, but you can pass a copy with <list>[:]
+	lists are passed by reference, but you can pass a copy with <list>[:] # Actually not true, python passes by object reference
 	pass an arbitrary numbers of arguments with *<param> # packs the arguments into a tuple
 	you can pass keyword or positional arguments to an arbitrary argument
 
