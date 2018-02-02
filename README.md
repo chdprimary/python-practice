@@ -77,10 +77,11 @@ lists
 	<list>[:] #copies a list
 	<list1> = <list2> #does not copy list2, actually makes list1 point at list2 (ie reference instead of value)
 
-tuples #tuples are lists whose elements are immutable
+tuples 
 
-	* tuples use () instead of []
-	* but you can redefine the whole tuple at once
+	tuples are lists whose elements are immutable
+	tuples use () instead of []
+	but you can redefine the whole tuple at once
 
 dictionaries
 
