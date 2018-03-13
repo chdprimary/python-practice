@@ -25,11 +25,6 @@
 # FUNCTIONAL (non-pythonic, don't use): filter(), map()
 
 # !!!
-# SORTING
-# sorted() is a stable sort. This is useful when doing secondary,tertiary,etc sorts.
-# sorted() also takes an optional comparison function of one arg - sorted(key=fn|lambda)
-
-# !!!
 # DUCK TYPING
 # "Duck typing" is the pythonic way of checking type - basically try/except instead of 
 # checking type. "Ask for forgiveness rather than permission".
@@ -50,6 +45,15 @@
 # Keys of a dictionary have to be immutable
 # Tuple elements can't be mutated 
 # - but an entire tuple can be reassigned (bc just changing label name, see pass-by=sharing)
+# Internally, a list is handled as an fixed-size array that grows when full. 
+# - len and subscripting are O(1), copy is O(n) as is insert/del (have to shift elements)
+# - sorting is O(nlogn), algorithm is timsort
+# - https://wiki.python.org/moin/TimeComplexity
+
+# !!!
+# SORTING
+# sorted() is a stable sort. This is useful when doing secondary,tertiary,etc sorts.
+# sorted() also takes an optional comparison function of one arg - sorted(key=fn|lambda)
 
 # !!!
 # COMMENTS
@@ -108,6 +112,7 @@ lambda y: isinstance(y,int)
 # can use comma for multiple assignment anywhere you imght normally use a 'tmp' variable to switch 2 values
 
 
+
 # ======
 # STRINGS
 # ======
@@ -138,6 +143,13 @@ s = 'abc'
 
 # Since strings are immutable, they can be used as dictionary keys, since the hash won't change
 
+# METHODS
+# .upper(), .lower(), .title()
+# .strip()
+# .count()
+# .index(<substr>), .find(<substr>)
+# .split(<substr>), .join(<iter>)
+# .replace(<old>,<new>), .translate(<map>[, delChars])
 
 
 # ======
