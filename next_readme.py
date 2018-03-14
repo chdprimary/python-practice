@@ -109,6 +109,7 @@ lambda y: isinstance(y,int)
 
 
 
+
 # ======
 # STRINGS
 # ======
@@ -154,6 +155,10 @@ s = 'abc'
 # .split(<substr>), .join(<iter>)
 # .replace(<old>,<new>), .translate(<map>[, delChars])
 
+# .translate(None, delChars) can be a good way to easily remove all instances of a set of chars from str.
+
+
+
 
 # ======
 # LISTS
@@ -195,6 +200,12 @@ list(range(-2,3)) # => [-2,-1,0,1,2]
 # - operate from BOTH ends
 # - maintain 'subarrays' within the array with i,j,etc vars
 
+# METHODS
+# .append(), .insert()
+# .pop(<i>) (i optional), .remove(<value>)
+# .index()
+
+
 
 
 # ======
@@ -208,6 +219,7 @@ list(range(-2,3)) # => [-2,-1,0,1,2]
 
 # Use <dict>.get(<key>) to avoid KeyError on an unexpected missing key
 # Use <dict>.setdefault(<k>,<v>) to set a val only if key isn't already present
+
 
 
 
