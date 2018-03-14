@@ -45,10 +45,6 @@
 # Keys of a dictionary have to be immutable
 # Tuple elements can't be mutated 
 # - but an entire tuple can be reassigned (bc just changing label name, see pass-by=sharing)
-# Internally, a list is handled as an fixed-size array that grows when full. 
-# - len and subscripting are O(1), copy is O(n) as is insert/del (have to shift elements)
-# - sorting is O(nlogn), algorithm is timsort
-# - https://wiki.python.org/moin/TimeComplexity
 
 # !!!
 # SORTING
@@ -126,6 +122,13 @@ lambda y: isinstance(y,int)
 '{:02d}'.format(3.14159) # => 3.14
 # https://pyformat.info/ is very useful
 
+# !!!
+# Strings are immutable; therefore, concatenating strings is space expensive! 
+# This is because new memory space must be allocated for each new concat'd string result.
+# Ex: concatenating a single char n times to a string in a for loop has O(n^2) time complexity. Yikes!
+
+# While strings are immutable, they can be easily converted to/from lists, which are mutable.
+
 # Remember strings are immutable - can't use subscript or 'del' operators
 s = 'abc' 
 # s[1] = 'd'
@@ -150,6 +153,48 @@ s = 'abc'
 # .index(<substr>), .find(<substr>)
 # .split(<substr>), .join(<iter>)
 # .replace(<old>,<new>), .translate(<map>[, delChars])
+
+
+# ======
+# LISTS
+# ======
+
+# !!!
+# Check if a value is in an array with `n in nums`
+
+# !!!
+# SLICE ASSIGNMENT
+# Python's "pass-by-sharing" normally doesn't allow you to mutate a container via assignment
+# When assigning <var> = <val>, <var> is a label/reference to the value <val> in memory
+# But you can mutate <var> with slice assignment: <var>[:] = [1,2,3] mutates var in-place.
+# This is because <var> just means the label <var>, but <var>[:] means the underlying entire list.
+# <var>[:] = <val> is AN ENTIRELY DIFFERENT OPERATION from <var> = <list>[:], which returns a shallow copy of <list>.
+# You can also "slice assign" just a portion of the underlying list in memory: <var>[0:2] = [0,0,0]
+# stackoverflow.com/questions/10623302
+# stackoverflow.com/questions/12078679
+# stackoverflow.com/questions/10155951
+
+# !!!
+# A shallow copy is the same value, recreated elsewhere in memory:
+a = [1,2,3,4,5]
+b = a[:] # b = a would have b point to the SAME array in mem
+b[1] = 99
+# a => [1,2,3,4,5]
+# b => [1,99,3,4,5]
+
+# You can coerce a range to a list
+list(range(-2,3)) # => [-2,-1,0,1,2]
+
+# EFFICIENCY
+# Internally, a list is handled as an fixed-size array that grows when full. 
+# - len and subscripting are O(1), copy is O(n) as is insert/del (have to shift elements)
+# - sorting is O(nlogn), algorithm is timsort
+# - https://wiki.python.org/moin/TimeComplexity
+# Often there are brute-force algos for array problems that use O(n) space, but there are often O(1) solutions if you:
+# - write to the array in-place
+# - operate from BOTH ends
+# - maintain 'subarrays' within the array with i,j,etc vars
+
 
 
 # ======
