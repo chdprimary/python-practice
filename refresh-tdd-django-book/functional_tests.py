@@ -15,7 +15,7 @@ class NewVisitorTest(unittest.TestCase):
         self.browser.get('http://localhost:8000')
 
         # Alice notices the page title and header mention todo lists
-        self.assertIn('To-Do', self.browser.title)
+        self.assertIn('To-Do lists', self.browser.title)
         header_text = self.browser.find_element_by_tag_name('h1').text
         self.assertIn('To-Do', header_text)
 
