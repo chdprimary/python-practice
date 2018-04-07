@@ -1,3 +1,4 @@
+# First write "problem statement"
 # MY PROBLEM SOLVING METHOD: I/OWP-STEO
 
 # ======
