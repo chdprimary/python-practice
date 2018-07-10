@@ -1,5 +1,13 @@
-# First write "problem statement"
-# MY PROBLEM SOLVING METHOD: I/OWP-STEO
+# First write "problem statement", then:
+# PROBLEM SOLVING METHOD: I/OWP-STEO
+# write the problem INPUT & OUTPUT
+# WHITEBOARD a solution
+# consider algo PERFORMANCE
+# - (CODE)
+# SYNTAX highlighting
+# ensure TYPES flow correctly through algorithm
+# try a few EXAMPLES to be sure (edge & corner cases)
+# OPTIMIZE your code (i.e. refactor)
 
 # ======
 # GENERAL PYTHON STUFF
